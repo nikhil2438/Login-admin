@@ -73,7 +73,7 @@ const Login = () => {
         alert("✅ " + data.message);
         console.log("Logged in:", data);
 
-        // Redirect after successful login
+        
         window.location.href = "https://admin-charity-bg56.vercel.app/";
       } catch (error) {
         console.error("Login error:", error.message);
