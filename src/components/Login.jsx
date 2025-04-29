@@ -24,7 +24,7 @@ const Login = () => {
       }
 
       try {
-        const res = await fetch("http://192.168.1.45:5000/api/register", {
+        const res = await fetch("http://localhost:5000/api/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -54,9 +54,9 @@ const Login = () => {
         setLoading(false);
       }
     } else {
-      // Login logic
+      
       try {
-        const res = await fetch("http://192.168.1.45:5000/api/login", {
+        const res = await fetch("http://localhost:5000/api/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -151,6 +151,7 @@ const Login = () => {
                 placeholder="Confirm your password"
                 className="w-full p-2 mt-1 border rounded-lg focus:ring focus:ring-blue-300"
                 value={formData.ConfirmPassword}
+                
                 onChange={(e) =>
                   setFormData({ ...formData, ConfirmPassword: e.target.value })
                 }
