@@ -9,7 +9,7 @@ const Login = () => {
     MobileNumber: "",
     Password: "",
     ConfirmPassword: "",
-    usertype: "User", // default
+    usertype: "User", 
   });
 
   const handleSubmit = async (e) => {
